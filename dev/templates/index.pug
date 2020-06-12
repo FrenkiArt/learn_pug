@@ -1,0 +1,44 @@
+extends ../layout/main
+
+block variables
+  - var pageTitle = 'learning Pug'
+  - var youAreUsingPug = true
+  - var foo = true
+  - var bar
+  - var speshialLink = 'SpeshialLink'
+
+block content
+  h1.title Pug - node template engine
+  #container.col
+    if youAreUsingPug
+      p You are amazing
+    else
+      p Get on it!
+    p.
+      Pug is a terse and simple templating language with a strong focus on perfomance and powerful features.
+  .another_div.
+    some test Звоните по телефону #[a(href="" class="123") 123-123] или на почту
+  .second_div
+    a(href='/' + speshialLink) #{speshialLink}
+    p.
+      Foo is #{foo}
+    p= speshialLink
+  .therd_div= "Привет из третьего Дива ))"
+  p.
+    В принципе и так всё рендерится ), прикольно )
+  p= "Лол, это работает, само, без сборщиков ))"
+
+  h2= "Теперь команда такая! pug templates --out ../dist -P -w"
+  p.
+    Она позволяет выгружать из Пага в ХТМЛ нампрямую, при любых изменениях, без всяких Галпов и Вэбпаков. Круть!
+  h3 В общем, цикл такой!
+  ul
+    li npm install pug
+    li npm install pug-cli -g (Если небыло)
+    li pug --help (если чё-та забыл)
+    li pug templates --out ../dist -P -w (для нормальной работы)(Возможны коррективы относительных путей, смотря откуда писать команду на сборку)
+    li например вот так pug ./dev/templates --out ./dist -P -w (В принципе я эту команду прописал в npm start)
+
+block scripts
+  script(type='text/javascript').
+    if (foo) bar(1 + 5)

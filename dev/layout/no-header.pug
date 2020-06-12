@@ -1,0 +1,13 @@
+block variables
+
+doctype html
+html(lang="ru")
+  head
+    title= pageTitle
+    script(type='text/javascript').
+      if (foo) bar(1 + 5)
+  body
+    block content
+    p.
+      Здесь нет Хедера, и соответственно нет навигации
+    a(href="./index.html") Верните меня пожалуйста назад )

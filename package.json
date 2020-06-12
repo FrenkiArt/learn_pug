@@ -1,0 +1,16 @@
+{
+  "name": "learn-pug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pug ./dev/templates --out ./dist -P -w"
+  },
+  "keywords": [],
+  "author": "Archy",
+  "license": "MIT",
+  "devDependencies": {
+    "pug": "^3.0.0"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>learning Pug</title>
+  </head>
+  <body>
+    <header class="header">
+      <ul class="nav">
+            <li><a class="nav-link" href="./index.html">index.html</a>
+            </li>
+            <li><a class="nav-link" href="./page.html">page.html</a>
+            </li>
+            <li><a class="nav-link" href="#">3</a>
+            </li>
+            <li><a class="nav-link last-link" href="#">4</a>
+            </li>
+      </ul>
+    </header>
+    <h1 class="title">Pug - node template engine</h1>
+    <div class="col" id="container">
+      <p>You are amazing</p>
+      <p>Pug is a terse and simple templating language with a strong focus on perfomance and powerful features.</p>
+    </div>
+    <div class="another_div">some test Звоните по телефону <a class="123" href="">123-123</a> или на почту</div>
+    <div class="second_div"><a href="/SpeshialLink">SpeshialLink</a>
+      <p>Foo is true</p>
+      <p>SpeshialLink</p>
+    </div>
+    <div class="therd_div">Привет из третьего Дива ))</div>
+    <p>В принципе и так всё рендерится ), прикольно )</p>
+    <p>Лол, это работает, само, без сборщиков ))</p>
+    <h2>Теперь команда такая! pug templates --out ../dist -P -w</h2>
+    <p>Она позволяет выгружать из Пага в ХТМЛ нампрямую, при любых изменениях, без всяких Галпов и Вэбпаков. Круть!</p>
+    <h3>В общем, цикл такой!</h3>
+    <ul>
+      <li>npm install pug</li>
+      <li>npm install pug-cli -g (Если небыло)</li>
+      <li>pug --help (если чё-та забыл)</li>
+      <li>pug templates --out ../dist -P -w (для нормальной работы)(Возможны коррективы относительных путей, смотря откуда писать команду на сборку)</li>
+      <li>например вот так pug ./dev/templates --out ./dist -P -w (В принципе я эту команду прописал в npm start)</li>
+    </ul>
+    <script type="text/javascript">if (foo) bar(1 + 5)</script>
+  </body>
+</html>
